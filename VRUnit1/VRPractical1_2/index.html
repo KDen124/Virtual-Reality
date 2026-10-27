@@ -9,7 +9,7 @@
         <img id="w" src="window.jpeg"/>
         <img id="b" src="brownbricks.jpg"/>
         <img id="r" src="roof.jpeg"/>
-        <img id="d" src="door.jpeg"/>
+        <img id="d" src="door.jpg"/>
       </a-assets>
       
       
@@ -393,7 +393,7 @@
 
       
       <a-entity class="pavement" position="0 0 -10" rotation="90 90 0">
-          <a-box position="0 0 0" width="6" height="100" depth="0.1" src="" ></a-box> 
+          <a-box position="0 0 0" width="6" height="100" depth="0.1" src="floor.jpeg" ></a-box> 
       </a-entity>
 
       <a-entity class="tree" position="1 0 -15" rotation="0 0 0">
@@ -440,8 +440,81 @@
       </a-entity>
 
 
-      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-entity class="car" position="5 0 -12" rotation="0 0 0">
+        <a-box position="0 0.9 0" width="5.4" height="0.8" depth="2.1" color="#343434"></a-box>
+        <a-box position="0 1.45 0" width="2.6" height="0.7" depth="1.9" color="#343434"></a-box>
+        <a-box position="0 1.15 0" width="5.5" height="0.4" depth="0.2" color="#9EACE1"></a-box>
+        <a-box position="0 1.9 0" width="2" height="0.3" depth="0.2" rotation="0 90 0" src="lights.jpeg"></a-box>
+        <a-box position="-1.25 1.15 0" width="1.8" height="0.4" depth="1.3" rotation="90 90 0" src= "window.png" color="#9EACE1"></a-box>
+
+        <a-box position="-1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="-1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+        <a-box position="1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+
+        <a-cylinder position="-1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="-1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+      </a-entity>
+
+      <a-entity class="car" position="-15 0 -12" rotation="0 0 0">
+        <a-box position="0 0.9 0" width="5.4" height="0.8" depth="2.1" color="#343434"></a-box>
+        <a-box position="0 1.45 0" width="2.6" height="0.7" depth="1.9" color="#343434"></a-box>
+        <a-box position="0 1.15 0" width="5.5" height="0.4" depth="0.2" color="#9EACE1"></a-box>
+        <a-box position="0 1.9 0" width="2" height="0.3" depth="0.2" rotation="0 90 0" src="lights.jpeg"></a-box>
+        <a-box position="-1.25 1.15 0" width="1.8" height="0.4" depth="1.3" rotation="90 90 0" src= "window.png" color="#9EACE1"></a-box>
+
+        <a-box position="-1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="-1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+        <a-box position="1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+
+        <a-cylinder position="-1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="-1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+      </a-entity>
+
+      <a-entity class="car" position="17 0 -9" rotation="0 180 0">
+        <a-box position="0 0.9 0" width="5.4" height="0.8" depth="2.1" color="#343434"></a-box>
+        <a-box position="0 1.45 0" width="2.6" height="0.7" depth="1.9" color="#343434"></a-box>
+        <a-box position="0 1.15 0" width="5.5" height="0.4" depth="0.2" color="#9EACE1"></a-box>
+        <a-box position="0 1.9 0" width="2" height="0.3" depth="0.2" rotation="0 90 0" src="lights.jpeg"></a-box>
+        <a-box position="-1.25 1.15 0" width="1.8" height="0.4" depth="1.3" rotation="90 90 0" src= "window.png" color="#9EACE1"></a-box>
+
+        <a-box position="-1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="-1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+        <a-box position="1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+
+        <a-cylinder position="-1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="-1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+      </a-entity>
+
+      <a-entity class="car" position="-37 0 -9" rotation="0 180 0">
+        <a-box position="0 0.9 0" width="5.4" height="0.8" depth="2.1" color="#343434"></a-box>
+        <a-box position="0 1.45 0" width="2.6" height="0.7" depth="1.9" color="#343434"></a-box>
+        <a-box position="0 1.15 0" width="5.5" height="0.4" depth="0.2" color="#9EACE1"></a-box>
+        <a-box position="0 1.9 0" width="2" height="0.3" depth="0.2" rotation="0 90 0" src="lights.jpeg"></a-box>
+        <a-box position="-1.25 1.15 0" width="1.8" height="0.4" depth="1.3" rotation="90 90 0" src= "window.png" color="#9EACE1"></a-box>
+
+        <a-box position="-1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="-1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#FFEB3B"></a-box>
+        <a-box position="1.7 0.75 0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+        <a-box position="1.7 0.75 -0.9" width="0.3" height="0.25" depth="0.35" color="#F44336"></a-box>
+
+        <a-cylinder position="-1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="-1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+        <a-cylinder position="1.45 0.45 -1.1" src="tire.png" rotation="90 0 0" height=".2" radius="0.5"></a-cylinder>
+      </a-entity>
+
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="grass.jpeg" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC" src="sky1.jpeg"></a-sky>
       <a-camera position="3 10 5"></a-camera>
     </a-scene>
   </body>
