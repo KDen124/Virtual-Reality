@@ -25,6 +25,10 @@ window.addEventListener("DOMContentLoaded",function() {
       5) Set cloud entities position to those passed in to the function.
       6) Add the cloud entity to the scene
 */
+  let cloud = document.createElement("a-entity");
+
+  cloud.setAttribute("position",{x:x, y:y, z:z});
+  scene.append( cloud );
 
 /* Task 3: Create a function createHouse that,
       1) Accept an x and z position for where to place the house "entity"
