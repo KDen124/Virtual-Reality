@@ -21,8 +21,23 @@ window.addEventListener("DOMContentLoaded",function() {
   //Challenge 1: Create an array to store 20 clouds in random positions
   cloud = new Cloud(-5,10,-1);
 
-  //Challenge 3: Create an array to store 100 snowflakes in random positions
+  let clouds = []
+  for (let i = 0; i < 20; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    let cloud = new Cloud(x,10,z);
+    clouds.push(cloud);
+  }
 
+  //Challenge 3: Create an array to store 100 snowflakes in random positions
+  let snowflakes = []
+  for (let i=0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    let y = rnd(10,20);
+    let snowflake = new Snowflake(x,y,z);
+    snowflakes.push(snowflake);
+  }
   loop();
 })
 
@@ -33,7 +48,16 @@ function loop(){
   cloud.fly();
   //Challenge 2: Traverse your array of clouds and make each cloud fly
 
+  for (let i=1; i < clouds.length; i++){
+    let c = clouds[i-1];
+    c.fly();
+  }
   //Challenge 4: Traverse your array of snowflakes and make each snowflake fall
-  
+
+  for (let i=1; i < snowflakes.length; i++){
+    let s = snowflakes[i-1];
+    s.fall();
+  }
+
   window.requestAnimationFrame( loop );
 }
