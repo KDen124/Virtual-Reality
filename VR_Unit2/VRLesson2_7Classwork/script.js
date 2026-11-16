@@ -11,6 +11,6 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 function loop(){
   //Challenge 5: Make all the dudes jump.
-  
+  dude.jump();
   window.requestAnimationFrame( loop );
 }
