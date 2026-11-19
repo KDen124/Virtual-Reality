@@ -12,7 +12,7 @@
 
 let maze = [
   "----------------------",
-  "----------------------",
+  "-----x----------------",
   "----------------------",
   "----------------------",
   "----------------------",
@@ -41,6 +41,15 @@ window.addEventListener("DOMContentLoaded",function() {
        Make an appropriate decision based on the characters you chose to enter 
        in the maze.  Create an instance of the corresponding object.
     */
+
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "x"){
+        new Wall(c,1,r)
+      }
+
+    }
   }
 
 })
